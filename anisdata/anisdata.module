@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Contains anisdata.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+
+function anisdata_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        // Main module help for the mydata module.
+        case 'help.page.anisdata':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('This dispaly information what you enter your application.') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+

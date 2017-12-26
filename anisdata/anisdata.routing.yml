@@ -1,0 +1,32 @@
+anisdata.mydata_controller_display:
+  path: '/anisdata'
+  defaults:
+    _controller: '\Drupal\anisdata\Controller\MydataController::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+
+
+anisdata.mydata_form:
+  path: '/anisdata/form/mydata'
+  defaults:
+    _form: '\Drupal\anisdata\Form\MydataForm'
+    _title: 'MydataForm'
+  requirements:
+    _access: 'TRUE'
+
+anisdata.display_table_controller_display:
+  path: '/anisdata/hello/table'
+  defaults:
+    _controller: '\Drupal\anisdata\Controller\DisplayTableController::display'
+    _title: 'display'
+  requirements:
+    _permission: 'access content'
+
+anisdata.delete_form:
+  path: '/anisdata/form/delete/{cid}'
+  defaults:
+    _form: '\Drupal\anisdata\Form\DeleteForm'
+    _title: 'DeleteForm'
+  requirements:
+    _access: 'TRUE'
